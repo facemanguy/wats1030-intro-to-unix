@@ -14,10 +14,31 @@ and then clone it to your development environment.
 
 ### Navigating the Filesystem
 
-* Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. *Paste the output of the `pwd` command here:*
-* Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`?*
+* Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. *Paste the output of the `pwd` command here:* 
+```
+/c/Users/John Meyer/wats1030-intro-to-unix
+```
+* Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`?* 
+```
+challenge_files  LICENSE  nix_scavenger_hunt.md  nix_scavenger_hunt_stretch.md  README.md  super_scavengers.md
+```
+I see files within the repo for this project
 * You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options?*
+```
+total 94K
+drwxr-xr-x 1 John Meyer 197121    0 Jan 17 17:01 .
+drwxr-xr-x 1 John Meyer 197121    0 Jan 19 15:01 ..
+drwxr-xr-x 1 John Meyer 197121    0 Jan 17 17:01 .git
+drwxr-xr-x 1 John Meyer 197121    0 Jan 17 17:01 challenge_files
+-rw-r--r-- 1 John Meyer 197121 1.1K Jan 17 17:01 LICENSE
+-rw-r--r-- 1 John Meyer 197121 5.5K Jan 17 17:01 nix_scavenger_hunt.md
+-rw-r--r-- 1 John Meyer 197121  325 Jan 17 17:01 nix_scavenger_hunt_stretch.md
+-rw-r--r-- 1 John Meyer 197121 2.8K Jan 17 17:01 README.md
+-rw-r--r-- 1 John Meyer 197121  268 Jan 17 17:01 super_scavengers.md
+```
+-alh appears to have listed the same content as ls but with a more verbose readable format includng file details and permmisions
 * The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://man.he.net/). Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do?*
+
 * Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. *What files and directories do you see listed?*
 * A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) *Then run `pwd` and paste the output here:*
 * Another special shortcut in Unix is the `~` location. This indicates the *user root* directory, meaning the top-most directory in the hierarchy that comes below your user account. Use `cd` to move to `~`. *Run `pwd` and paste the response here:*
