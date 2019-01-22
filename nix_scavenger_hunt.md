@@ -53,13 +53,45 @@ The manual describes the ls options as follows:
 bin  cmd  dev  etc  git-bash.exe  git-cmd.exe  LICENSE.txt  mingw64  proc  ReleaseNotes.html  tmp  unins000.dat  unins000.exe  unins000.msg  usr
 ```
 * A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) *Then run `pwd` and paste the output here:*
+```
+/
+```
+```
+If / represents the root then there should be nothing more than a / to represent that it is above the drives.
+```
 * Another special shortcut in Unix is the `~` location. This indicates the *user root* directory, meaning the top-most directory in the hierarchy that comes below your user account. Use `cd` to move to `~`. *Run `pwd` and paste the response here:*
+```
+/c/Users/John Meyer
+```
+```
+This would be my user account that is within users and my disk drive or the root for everything that user does
+```
 * Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. *How many files do you find?*
+```
+2015_special_stuff.demo  cloaked-wookie.demo  scooter-double-mamba.demo
+```
+```
+I found these 3 files that end in .demo. I used ls *.demo to list all files with .demo.
+```
 * Use the `cd` command to move "up" one directory. *Where are you in the filesystem now?*
+```
+/c/Users/John Meyer/wats1030-intro-to-unix
+```
+```
+I used cd ../ to move up a directory from the challenge_files child folder
+```
 * Press the up arrow on your keyboard. *What just happened?*
+```
+Pressing the up arrow brings up my last command used in this case pwd which showed the result of cd ../
+```
 * Press the up arrow a few more times. *What do you see?*
+```
+It brings up the last commands I used in order
+```
 * Run the `history` command. *What do you see?*
-
+```
+History brings up all the commands I have used since my last pull request including git and failed commands
+```
 ### Observing the System
 
 * Discover what account you are logged into using the `whoami` command. *What username are you currently using?*
