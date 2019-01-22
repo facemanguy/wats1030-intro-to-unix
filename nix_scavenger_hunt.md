@@ -95,11 +95,31 @@ History brings up all the commands I have used since my last pull request includ
 ### Observing the System
 
 * Discover what account you are logged into using the `whoami` command. *What username are you currently using?*
+```
+John Meyer
+```
 * Discover who else is on your system with the `who` command. *Are any other users using your system? If so, list them here:*
+```
+Both of my machines only have one user thus `who` didn't print anything
+```
 * How long has your system been running? Use `uptime` to see, and *paste the result here:*
+```
+I wasn't able to get uptime to run on my windows machines via git bash but I found a linux evironment online that 
+showed me what the results would be formatted as: 00:58:23 up 46 min, 1 users, load average: 1.31, 1.43, 0.88
+```
 * Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here?*
+```
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     8692    3528    8692      10704  cons0     197609 17:05:38 /usr/bin/ps
+     3528       1    3528       3528  cons0     197609 23:15:22 /usr/bin/bash
+```
+```
+This is a list of running processes in my system memory. The first few columns are IDs of the process, the terminal that ran it, and a user id. The time it was initialized and the name of the command.
+```
 * Run `top` and review the results. (Hint: You may need to use `ctrl-c` to get out of this app.) *How do you interpret what you see here?*
-
+```
+This shows what processes are using the most resources and how those resources are distributed.
+```
 ### Finding and Viewing Files
 
 * Make sure you are in the `challenge_files` directory. Use the `*` wildcard to find all the files that have the word "credit" in the filename. *How many files did you find?*
