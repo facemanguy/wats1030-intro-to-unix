@@ -135,6 +135,10 @@ credit_cards.txt  credit_cards2.txt
 /c/Users/John Meyer/wats1030-intro-to-unix/challenge_files/tmp/modi_laboriosam.txt
 ```
 * Use the `grep` command to search for text within a file. Use `grep` on all the `.user` files in `challenge_files` to find which files contain "WA" (the abbreviation for Washington state). *How many files did you find?*
+```
+Britt-Erdman.user:O'Harachester, WA 37261
+Lissie-Strosin.user:Jewessfurt, WA 00816-7241
+```
 * Use the `-r` option of `grep` to *recursively* find the text "Waldo" hidden in a file somewhere under the `challenge_files` directory. *Paste the result showing the file and line where the word "Waldo" shows up.*
 ```
 I could not get the syntax of grep to work. I dont understand a single resource I've looked at.
